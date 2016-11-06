@@ -106,18 +106,18 @@ footer {background: #aaa;color:white;}
 
 switch(popup) {
   case 'FIGHT':
-    var strong = prompt("How trustworthy of your computer! Do you have adblock (YES or NO)?").toUpperCase();
-    var smart = prompt("Do you have antiSpyware?").toUpperCase();
-    if(strong === 'YES' || smart === 'YES') {
-      alert("Too bad..the popup was smarter and stronger than you blocked, and your softwares!");
-      alert("Thanks " + playeName+ " for telling your softwares! By the way yoyu loose");
+    var ad = prompt("How trustworthy of your computer! Do you have adblock (YES or NO)?").toUpperCase();
+    var spy = prompt("Do you have antiSpyware?").toUpperCase();
+    if(ad === 'YES' || spy === 'YES') {
+      alert("Too bad..the popup blocked, and your softwares!");
+      alert("Thanks " + playeName + " for telling your softwares! By the way yoyu loose");
     } else {
       alert("Smart move not trusting popups, a true winner!");
     }
     break;
   case 'PAY':
     var money = prompt("All right, we'll pay the popup. Do you have any money (YES or NO)?").toUpperCase();
-    var dollars = prompt("Is your money in "+ playeName +" Dollars?").toUpperCase();
+    var dollars = prompt("What is your email").toUpperCase();
     if(money === 'YES' && dollars === 'YES') {
       alert("Great "+ playeName+",! You payed the popup and now the popup is gonna spawm your email ");
             alert(playeName+"@email.com just got 9999999999 emails!");
@@ -128,15 +128,15 @@ switch(popup) {
     }
     break;
   case 'REPORT':
-    var fast = prompt("Do you have google's phone number (YES or NO)?").toUpperCase();
-    var headStart = prompt("Did you call em'").toUpperCase();
-    if(fast === 'YES' || headStart === 'YES') {
+    var phone = prompt("Do you have google's phone number (YES or NO)?").toUpperCase();
+    var call = prompt("Did you call em'").toUpperCase();
+    if(phone === 'YES' || call === 'YES') {
       alert("Google finally did something, You live  through the Web another day.");
     } else {
       alert("Viruses and popups just infected "+ playeName + "'s computer");
     }
     break;
   default:
-    prompt("I didn't understand your choice. try again or your computer will get infected, this time picking FIGHT, PAY, or REPORT!");
+    prompt("I didn't understand your choice. Try again or your computer will get infected, this time picking FIGHT, PAY, or REPORT!");
 }</script><script type="text/javascript" src="js/script.js"></script>
 </body>
